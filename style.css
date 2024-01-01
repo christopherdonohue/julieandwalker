@@ -14,10 +14,14 @@
   align-items: center;
 }
 
+.gray-underline {
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
 .container {
   max-width: 824px;
   height: 400px;
-  outline: px solid;
+  /* outline: px solid; */
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
@@ -51,6 +55,7 @@
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
+  color: rgb(181, 181, 181);
 }
 
 .cursive1 {
@@ -109,6 +114,7 @@
   scrollbar-width: thin;
   scrollbar-color: white white;
   padding-bottom: 1rem;
+  color: rgb(92, 92, 92);
 }
 
 .details-text > div:not(:first-child) {
@@ -118,6 +124,10 @@
 .sticky-label {
   text-align: center;
   margin-bottom: 0.2rem;
+}
+
+h4 {
+  color: rgb(158, 158, 158);
 }
 
 .weddingday {
