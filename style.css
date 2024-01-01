@@ -4,16 +4,18 @@
   margin: 0;
 }
 
-body {
+.desktop-friendly {
+  display: flex;
+  align-items: center;
+}
+.mobile-friendly {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%;
-  height: 100%; */
 }
 
 .container {
-  width: 400px;
+  max-width: 824px;
   height: 400px;
   outline: px solid;
   overflow: hidden;
@@ -23,7 +25,7 @@ body {
 }
 
 .main {
-  width: 50%;
+  width: 70%;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -69,7 +71,8 @@ body {
 
 .img {
   width: 100%;
-  height: 500px;
+  height: 100%;
+  max-width: 824px;
   background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -92,13 +95,13 @@ body {
 }
 
 .details-text {
-  max-width: 22%;
+  max-width: 25%;
   font-size: 1rem;
   padding: 0 2rem;
   position: absolute;
   right: 2%;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
   overflow: auto;
   height: 100%;
@@ -146,6 +149,10 @@ body {
   src: url('fonts/Poppins-ExtraLight.ttf');
 }
 
+.mobile-friendly {
+  display: none;
+}
+
 @media only screen and (max-width: 958px) {
   body {
     justify-content: flex-start;
@@ -180,6 +187,13 @@ body {
 }
 
 @media only screen and (max-width: 688px) {
+  .mobile-friendly {
+    display: inherit;
+  }
+  .desktop-friendly {
+    display: none;
+  }
+
   body {
     flex-direction: column;
     justify-content: center;
@@ -187,15 +201,19 @@ body {
   }
 
   .container {
-    width: 100%;
-    box-shadow: none;
+    /* width: 100%; */
+    /* max-height: 300px; */
+    /* box-shadow: none; */
   }
 
   .main-text-container {
     width: 100%;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
   }
 
   .save-the-date {
+    margin-top: 0.75rem;
     text-align: center;
   }
 
@@ -203,14 +221,13 @@ body {
     position: relative;
     max-width: 100%;
     right: auto;
-    max-height: 300px;
-    overflow: auto;
     justify-content: flex-start;
   }
 
   .main {
     padding: 0;
     min-width: 100%;
+    height: auto;
   }
 
   .details-text > div:not(:first-child) {
