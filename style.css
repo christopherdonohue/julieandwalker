@@ -245,7 +245,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 1816px) {
+@media only screen and (max-width: 1880px) {
   @media only screen and (max-height: 1200px) {
     .details-text {
       justify-content: flex-start;
