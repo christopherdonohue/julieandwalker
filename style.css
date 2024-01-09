@@ -247,7 +247,9 @@ h4 {
     position: relative;
     max-width: 100%;
     right: auto;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     max-height: none;
     overflow: initial;
   }
