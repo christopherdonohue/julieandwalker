@@ -4,6 +4,25 @@
   margin: 0;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.parking {
+  margin-top: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.parking > h4 {
+  color: black;
+}
+
+.gray-underline {
+  text-decoration: underline;
+}
 .desktop-friendly {
   display: flex;
   /* align-items: center; */
